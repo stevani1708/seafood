@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Pesanan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-hover {
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+        }
+        .btn-hover:hover {
+            transform: scale(1.05);
+            background: #047857;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeIn 0.5s forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="card fade-in">
+        <i class="fas fa-check-circle text-green-500 text-5xl mb-3"></i>
+        <h1 class="text-2xl font-bold text-gray-700">Konfirmasi Pesanan</h1>
+        <p class="text-gray-600 mt-2">Pesanan Anda telah diterima dan sedang diproses.</p>
+        
+        <div class="mt-4 text-left">
+            <h2 class="text-lg font-bold text-gray-700">Detail Pesanan</h2>
+            <p class="text-md mt-2">Total Pembayaran: <span class="font-bold">Rp. 330.600,00</span></p>
+            <p class="text-md">Metode Pembayaran: <span class="font-bold">BRI</span></p>
+            <p class="text-md">Alamat Pengiriman: <span class="font-bold">Jalan Bahagia, Ds. Indah Dunia</span></p>
+        </div>
+
+        <div class="mt-6 flex flex-col gap-3">
+            <button class="bg-gray-600 text-white text-lg font-bold py-3 px-6 rounded-lg btn-hover w-full" onclick="window.location.href='index.html'">
+                Kembali ke Beranda
+            </button>
+            <button class="bg-green-600 text-white text-lg font-bold py-3 px-6 rounded-lg btn-hover w-full" onclick="window.location.href='tracking.html'">
+                Lacak Pesanan
+            </button>
+        </div>
+    </div>
+</body>
+</html>

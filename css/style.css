@@ -1,0 +1,162 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    padding: 20px;
+}
+/* ======= Navbar Styling ======= */
+.navbar {
+    background: linear-gradient(to right, #005f73, #0a9396);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffdd57;
+    transform: scale(1.1);
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: url('https://placehold.co/1200x400') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+/* Container */
+.search-container {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Judul */
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1e3c72;
+}
+
+/* Kotak Pencarian */
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #2a5298;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #f5a623;
+    box-shadow: 0 0 5px rgba(245, 166, 35, 0.7);
+}
+
+.btn {
+    background: #f5a623;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e08e12;
+    transform: scale(1.05);
+}
+.menu {
+    padding: 20px;
+    text-align: center;
+}
+/* Daftar Menu */
+.menu-list {
+    margin-top: 20px;
+}
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.03);
+    background: #e3e3e3;
+}
+
+.menu-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.menu-item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}

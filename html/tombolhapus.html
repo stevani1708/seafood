@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2563eb, #facc15);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            color: #333;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        .btn-hover {
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+        }
+        .btn-hover:hover {
+            transform: scale(1.05);
+            background: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <i class="fas fa-home text-blue-600 text-5xl mb-3"></i>
+        <h1 class="text-2xl font-bold">Selamat Datang di Beranda</h1>
+        <p class="mt-2 text-gray-600">Terima kasih telah berbelanja bersama kami!</p>
+        
+        <div class="mt-6 flex flex-col gap-3">
+            <button class="bg-blue-600 text-white text-lg font-bold py-3 px-6 rounded-lg btn-hover w-full" onclick="window.location.href='produk.html'">
+                Lihat Produk
+            </button>
+            <button class="bg-yellow-500 text-white text-lg font-bold py-3 px-6 rounded-lg btn-hover w-full" onclick="window.location.href='keranjang.html'">
+                Lihat Keranjang
+            </button>
+            <button class="bg-red-500 text-white text-lg font-bold py-3 px-6 rounded-lg btn-hover w-full" onclick="window.location.href='hapus_pesanan.html'">
+                Hapus Pesanan
+            </button>
+        </div>
+    </div>
+</body>
+</html>

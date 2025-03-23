@@ -1,0 +1,261 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Playfair+Display:wght@600&family=Great+Vibes&display=swap');
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container utama */
+.container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 1100px;
+    height: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Bagian gambar */
+.image-container {
+    width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Bagian form dengan Glassmorphism */
+.form-container {
+    width: 50%;
+    padding: 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    backdrop-filter: blur(10px);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Logo */
+.logo img {
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Navbar */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+/* ===== Navbar Styling ===== */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: rgba(255, 255, 255, 0.2); /* Warna lebih terang */
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5); /* Tambahkan border */
+    backdrop-filter: blur(8px); /* Efek blur agar lebih modern */
+}
+
+/* Style untuk setiap link */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* Style untuk ikon */
+nav a i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Hover effect */
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3); /* Warna lebih jelas saat hover */
+    color: #f5a623;
+    border: 1.5px solid rgba(255, 255, 255, 0.7); /* Warna border lebih terang */
+    transform: scale(1.05);
+}
+/* Judul */
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f5a623;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.form-container {
+    background: #2a85c5;
+    color: white;
+    padding: 50px;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Group */
+.input-group {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.input-group label i {
+    margin-right: 8px;
+    color: #f5a623;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+/* Tombol */
+.btn {
+    background: linear-gradient(135deg, #f5a623, #e08e12);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #e08e12, #d1760c);
+    transform: scale(1.05);
+}
+
+/* Animasi Tombol */
+@keyframes btnBounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.btn:hover {
+    animation: btnBounce 0.5s ease-in-out;
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 10px;
+}
+
+.register-link a {
+    color: #f5a623;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Tagline */
+.tagline {
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Responsif */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+    
+    .image-container {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .form-container {
+        width: 100%;
+        padding: 30px;
+    }
+}
